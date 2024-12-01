@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Nosifer&family=Rowdies:wght@300;400;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+
+}
+
+body{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    overflow-x: hidden;
+    background-image: linear-gradient(to left, #0D9AAE, rgb(37, 36, 36));
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.intro{
+    font-family: 'Nosifer';
+    width: 100vw;
+    background-image: url("/static/imgs/fundo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    justify-content: center;
+}
+.header-intro{
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+}
+
+.header-logo{
+    display: grid;
+    justify-content: center;
+}
+
+.header-redes {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    gap: 40px;
+    margin-top: -40px;
+    height: 10vh;
+    
+}
+
+.jump{
+    padding: 4px;
+    position: relative;
+}
+.jump :hover{
+    border-bottom: 1px solid;
+}
+.header-redes img{
+    width: 30px;
+}
+
+.header-nav{
+    background-color: #0D9AAE;
+    padding: 10px;
+    border-radius: 5px;
+    display: grid;
+    justify-items: center;
+    
+}
+.header-nav ul{
+    font-size: 1.5vw;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 60vw;
+
+}
+
+.header-nav li, a{
+    list-style: none;
+    text-decoration: none;
+    display: grid;
+    justify-content: center;
+   
+   
+    }
+
+
+.line {
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Animação suave */
+}
+
+/* Efeito de hover */
+.line:hover {
+    background-image: linear-gradient(to left, #000000, rgb(37, 36, 36));
+    transform: translateY(-5px); /* O botão sobe um pouco */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais forte para dar o efeito de elevação */
+}
+
+/* Efeito de clique */
+.line:active {
+    transform: translateY(0); /* Volta ao estado original */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave quando pressionado */
+}
+
+
+
+
+.main-intro{
+    display: grid;
+    justify-items: center;
+}
+
+.texto-motivador{
+    text-align: center;
+    font-size: 3vw;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+.btn-intro {
+    text-shadow: #000000 2px 2px 10px   ;
+    margin: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: #31d100;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease; /* Animação suave */
+  }
+
+  /* Efeito de hover */
+  .btn-intro:hover {
+    background-color: #4bff14; /* Muda a cor do botão */
+    transform: translateY(-5px); /* O botão sobe um pouco */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais forte para dar o efeito de elevação */
+  }
+
+  /* Efeito de clique */
+  .btn-intro:active {
+    transform: translateY(0); /* Volta ao estado original */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave quando pressionado */
+  }
+
+
+.main{
+    display: grid;
+    justify-items: center;
+}
+
+.sec-1{
+    background-color: rgba(0, 0, 0, 0);
+    display: grid ;
+    grid-template-columns: 40% 40%;
+    gap: 19vw;
+    justify-items: center;
+}
+
+.descri{
+    margin: 10px;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 30vh;
+
+}
+.descri-texto{
+    font-size: 2vw;
+    background-color: #345a1c00;
+}
+
+.descri-btn{
+    box-shadow: 1px 1px 10px 1px black;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #0E9BAF;
+    width: 20vw;
+    height: 5vh;
+    border-radius: 4px;
+}
+.descri-btn {
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Animação suave */
+}
+
+/* Efeito de hover */
+.descri-btn:hover {
+    background-image: linear-gradient(to left, #0E9BAF, rgb(37, 36, 36));
+    transform: translateY(-5px); /* O botão sobe um pouco */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais forte para dar o efeito de elevação */
+}
+
+/* Efeito de clique */
+.descri-btn:active {
+    transform: translateY(0); /* Volta ao estado original */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave quando pressionado */
+}
+
+.carrocel-aulas{
+    background-color: #0d9bae00;
+    padding: 5px;
+}
+
+
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10%;
+    font-size: 18px;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.sec-2{
+    font-family: 'Rowdies';
+    width: 98vw;
+    background-color: #0d9bae00;
+    display: grid;
+    grid-template-columns: 78% 20%;
+    margin-bottom: 20px; 
+    margin-top: 20px;
+}
+
+.sec2-container{
+
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+
+.slider-item img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.sec2-container-text{
+    background-color: rgb(83, 64, 64);
+    padding: 5px;
+    margin-left: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sec2-text{
+    font-size: larger;
+    display: grid;
+    justify-items: right;
+}
+.sec2-titulo{
+    color: #0D9AAE;
+    font-family: 'Rowdies';
+    font-size: 2.5vw;
+}
+
+
+.sec2-mini-texto{
+    margin-top: 40px;
+    font-size: 1.3vw;
+}
+
+.sec2-btn{
+    margin-top: 10px;
+    background-color: #0D9AAE;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;    
+}
+.maps{
+    width: 30vw;
+    height: 30vh;
+    padding: 10px;
+    border-radius: 40px;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 10px;
+}
+
+.planos{
+    margin-top: 5px;
+    width: 95vw;
+    border-radius: 10px;
+    background-image: url("/static/imgs/cards.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    justify-items: center;
+    border: 1px solid black;
+}
+
+.planos-titulos{
+    padding: 20px;
+    display: grid;
+    justify-items: center;
+}
+.planos-titulo{
+    
+    text-shadow: 1px 1px 5px black;
+    font-family: 'Rowdies';
+    font-size: 2vw;
+    color: #0D9AAE;
+}
+
+.planos-sub-titulo{
+    
+    text-shadow: 1px 1px 10px black;
+    color: #363974;
+    font-family: 'Rowdies';
+    font-size: 3vw;
+}
+.planos-container-card{
+    font-family: 'Rowdies';
+    background-color: #345a1c00;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 10px;
+    padding: 20px;  
+}
+
+.planos-card{
+    background-color: #363974;
+    width: 30vw;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    display: grid;
+    justify-items: center;
+}
+
+.card-titulo{
+    color: #0D9AAE;
+    text-shadow: 1px 1px 10px black;
+    font-size: 5vw;
+    margin-bottom: 20px;
+}
+
+.card-valor{
+    background-color: #57ce0e;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 3vw;
+    text-shadow: 1px 1px 10px black;
+    box-shadow: 1px 1px 10px black;
+}
+.card-btn{
+    font-size: 2vw;
+    
+    box-shadow: 1px 1px 4px black;
+    text-shadow: 1px 1px 4px black;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    justify-items: center;
+    background-color: #0D9AAE;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+#card-btn-promo{
+    background-color: #363974;
+}
+
+.card-btn img{
+    width: 2.5vw;
+    min-width: 30px;
+}
+
+
+
+
+
+
+
+
+.card-btn {
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Animação suave */
+}
+
+/* Efeito de hover */
+.card-btn:hover {
+    background-image: linear-gradient(to left, #0E9BAF, rgb(37, 36, 36));
+    transform: translateY(-5px); /* O botão sobe um pouco */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais forte para dar o efeito de elevação */
+}
+
+/* Efeito de clique */
+.card-btn:active {
+    transform: translateY(0); /* Volta ao estado original */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave quando pressionado */
+}
+
+
+
+
+
+
+
+
+
+
+
+.card-descri{
+    font-size: 2vw;
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+    line-height: 2wh;
+}
+
+.card-pintar{
+    color: #68ff0a;
+}
+
+#card-promo {
+    background-color: #0D9AAE;
+}
+#card-titulo-promo{
+    color: white;
+}
+.card-placa{
+    position: absolute;
+    color: #0D9AAE;
+    
+    box-shadow: #000000 1px 1px 5px;
+    text-shadow: #000000 2px 4px 5px;
+    font-size: 1.5vw;
+    background-color: #324BF0;
+    transform: rotate(-20deg);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: -20px;
+}
+@media screen and (max-width: 1000px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .header-redes {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+    }
+    
+
+
+    .header-nav{
+        width: 90vw;
+    }
+    .header-nav ul{
+        width: 100%;
+        gap: 5px;
+        font-size: 3.5vw;
+    }
+
+    .texto-motivador{
+        font-size: 4vw;
+    }
+    .btn-intro{
+        width: 80vw;
+    }
+
+
+    .sec-1{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+        justify-items: center;
+        text-align: center;
+      
+    }
+
+
+    .descri{
+        margin: 10px;
+        display: grid;
+        justify-items: center;
+        grid-template-rows: auto;
+        gap: 10px;
+    
+    }
+    .descri-texto{
+        font-size: 4vw;
+        background-color: #345a1c;
+
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    
+    .descri-btn{
+        width: 40vw;
+    }
+
+    .sec-2{
+
+        gap: 20px;
+        background-color: rgba(0, 0, 0, 0);
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .sec2-container-text{
+        display: grid;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    .sec2-text{
+        display: grid;
+        justify-items: center;
+    }
+    .sec2-titulo{
+        color: #0D9AAE;
+        font-family: 'Rowdies';
+        font-size: 7vw;
+    }
+    
+    
+    .sec2-mini-texto{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 4vw;
+    }
+
+    .planos-titulo{
+        font-size: 7vw;
+        text-shadow: 1px 1px 1px black;
+    }
+    .planos-sub-titulo{
+        font-size: 8vw;    
+        text-shadow: 1px 1px 1px black;
+    }
+    .planos-container-card{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .planos-card{
+        width: 70vw;
+    }
+    .card-titulo{
+        font-size: 9vw;
+    }
+    .card-valor{
+        font-size: 8vw;
+    }
+    .card-btn{
+        font-size: 5vw;
+        
+    }
+    #card-btn-promo{
+        background-color: #363974;
+    }
+    .card-descri{
+        font-size: 5vw;
+        width: 90%;
+        text-align: center;
+        padding: 20px;
+        line-height: 2wh;
+    }
+}
